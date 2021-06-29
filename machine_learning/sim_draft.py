@@ -16,30 +16,38 @@ random.seed(123)                                    # for reproductibility
 N_sim = 50                                           # Number of toy data-sets
 random_seed = np.random.randint(N_sim, size=N_sim)
 
-sim_lr_acc = np.zeros((N_sim, 1))
-sim_lr_aucroc = np.zeros((N_sim, 1))
-sim_lr_aucpr = np.zeros((N_sim, 1))
-sim_lr_sensitivity = np.zeros((N_sim, 1))
-sim_lr_specificity = np.zeros((N_sim, 1))
+ZERO_INIT = np.zeros((N_sim, 1))
 
-sim_rf_acc = np.zeros((N_sim, 1))
-sim_rf_aucroc = np.zeros((N_sim, 1))
-sim_rf_aucpr = np.zeros((N_sim, 1))
-sim_rf_sensitivity = np.zeros((N_sim, 1))
-sim_rf_specificity = np.zeros((N_sim, 1))
+sim_lr_acc = ZERO_INIT
+sim_lr_aucroc = ZERO_INIT
+sim_lr_aucpr = ZERO_INIT
+sim_lr_sensitivity = ZERO_INIT
+sim_lr_specificity = ZERO_INIT
 
-sim_bdt_acc = np.zeros((N_sim, 1))
-sim_bdt_aucroc = np.zeros((N_sim, 1))
-sim_bdt_aucpr = np.zeros((N_sim, 1))
-sim_bdt_sensitivity = np.zeros((N_sim, 1))
-sim_bdt_specificity = np.zeros((N_sim, 1))
+sim_rf_acc = ZERO_INIT
+sim_rf_aucroc = ZERO_INIT
+sim_rf_aucpr = ZERO_INIT
+sim_rf_sensitivity = ZERO_INIT
+sim_rf_specificity = ZERO_INIT
+
+sim_bdt_acc = ZERO_INIT
+sim_bdt_aucroc = ZERO_INIT
+sim_bdt_aucpr = ZERO_INIT
+sim_bdt_sensitivity = ZERO_INIT
+sim_bdt_specificity = ZERO_INIT
 
 
 if __name__ == '__main__':
     for i in range(N_sim):
         # Data-set creation
-        X, y = datasets.make_classification(n_samples=100000, n_features=20, n_informative=2, weights=[0.995, 0.005],
-        	n_redundant=2, random_state=random_seed[i])
+        X, y = datasets.make_classification(
+		n_samples=100000,
+		n_features=20,
+		n_informative=2,
+		weights=[0.995, 0.005],
+        	n_redundant=2,
+		random_state=random_seed[i]
+	)
 
         # Data pre-processing
         X = StandardScaler().fit_transform(X)
@@ -94,17 +102,19 @@ if __name__ == '__main__':
     print('Done')
 
 # Print the description results
+COLS = ["AUC-PR", "AUC-roc", "Accuracy", "Sensitivity", "Specificity"]
+
 df_sim_lr = pd.DataFrame(np.c_[sim_lr_aucpr, sim_lr_aucroc, sim_lr_acc, sim_lr_sensitivity, sim_lr_specificity])
-df_sim_lr = pd.DataFrame(df_sim_lr.values, columns=["AUC-PR", "AUC-roc", "Accuracy", "Sensitivity", "Specificity"])
+df_sim_lr = pd.DataFrame(df_sim_lr.values, columns=COLS)
 print('----- Logistic Regression -----')
 print(df_sim_lr.describe())
 
 df_sim_rf = pd.DataFrame(np.c_[sim_rf_aucpr, sim_rf_aucroc, sim_rf_acc, sim_rf_sensitivity, sim_rf_specificity])
-df_sim_rf = pd.DataFrame(df_sim_rf.values, columns=["AUC-PR", "AUC-roc", "Accuracy", "Sensitivity", "Specificity"])
+df_sim_rf = pd.DataFrame(df_sim_rf.values, columns=COLS)
 print('----- Random Forest -----')
 print(df_sim_rf.describe())
 
 df_sim_bdt = pd.DataFrame(np.c_[sim_bdt_aucpr, sim_bdt_aucroc, sim_bdt_acc, sim_bdt_sensitivity, sim_bdt_specificity])
-df_sim_bdt = pd.DataFrame(df_sim_bdt.values, columns=['AUC-PR', 'AUC-ROC', 'Accuracy', 'Sensitivity', 'Specificity'])
+df_sim_bdt = pd.DataFrame(df_sim_bdt.values, columns=COLS)
 print('----- FastBDT -----')
 print(df_sim_bdt.describe())
