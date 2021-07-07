@@ -9,6 +9,11 @@ Finally, we have to color the dots in 2 different colors depending if they are i
 ![square_circle](https://user-images.githubusercontent.com/36447056/90817195-bcdf3680-e32d-11ea-8388-9a0a35cdf325.png)
 
 # square_triangle
-This time we want to plot a triangle that always touch the circle in all points. 
+Here the challenge require us to plot a triangle that always touch the circle in all points. 
 
 ![square_triangle](https://user-images.githubusercontent.com/36447056/90817451-22332780-e32e-11ea-8c68-929f0bc714b6.png)
+
+# Compute the derivative of a function
+In this exercise we compute the 3 first derivative of the gaussian function from scratch using only numpy (and matplotlib for illustration).
+![image](https://user-images.githubusercontent.com/36447056/124804323-751fc880-df5a-11eb-9623-a9f08f68f90f.png)
+
