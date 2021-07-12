@@ -70,8 +70,18 @@ The following tables shows the details results for 50 toy data-sets with 0.5% of
 </td></tr> </table>
 
 ### Figure 1: Performance 
-Here we can have a look at the average performance for the three methods over different proportion of positive class (%). For each point, 50 different toy data-sets have been used. These toys have 20 features, 100'000 observation points and a class imbalance ranging from 0.5% to 50%.
+Here we can have a look at the average performance for the three methods over different proportion of positive class (%).  
+For each point, we apply a 10-Fold CV.  
+These synthetic have 14 features, 10'000 observation points and a class imbalance ranging from 0.5% to 50%.
 
-![simmean_plot](https://user-images.githubusercontent.com/36447056/39082623-81e56dc8-4556-11e8-844e-dd5562dcd9c5.png)
+![image](https://user-images.githubusercontent.com/36447056/125333317-649c9300-e34a-11eb-8664-6475648f2f81.png)
+
+
+# Performance difference
+![image](https://user-images.githubusercontent.com/36447056/125333384-79792680-e34a-11eb-9cce-7487c6c3c467.png)
+
+# Summary
+As expected the BDT seems to overperform overall. However the biggest gain in performance by the BDT happens in highly imbalanced datasets.  
+As the dataset becomes more and more balanced, the 2 algorithm seems to perform in average the same.
 
 
