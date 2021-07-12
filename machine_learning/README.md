@@ -80,7 +80,9 @@ These synthetic have 14 features, 10'000 observation points and a class imbalanc
 
 ### Figure 2: Performance difference
 ![perfdelta](https://user-images.githubusercontent.com/36447056/125334204-62870400-e34b-11eb-8c42-c21d3432ddc2.png)  
-As expected the BDT seems to overperform overall. However the biggest performance delta is obtained by the BDT in highly imbalanced datasets.  
+
+As expected the BDT seems to overperform overall.  
+However the biggest performance delta is obtained by the BDT in highly imbalanced datasets.  
 As the datasets become more and more balanced, the 2 algorithms seems to converge to the same performance.  
 Note, in order to perform a more rigorous analysis, we should think about which standardisation to use, create more complex training/test datasets and more importantly tune the hyperparameters prior to testing.
 
