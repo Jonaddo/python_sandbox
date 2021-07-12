@@ -26,8 +26,9 @@ Here is a very brief visualization decription of the data-set. On the this plot 
 ![sepa_3_roc](https://user-images.githubusercontent.com/36447056/39691042-78f0063c-51dc-11e8-9fad-e0a0e254f88c.png)
 
 
-# Simulation studies overview
-The following tables shows the details results for 50 toy data-sets with 0.5% of signals (=positive class). The FastBDT has in average better performance than the two others in terms of AUC-ROC and AUC-PR. 
+# Classifier stress test overview
+The following tables shows the details results for 50 toy data-sets with 0.5% of signals (=positive class).  
+The FastBDT has in average better performance than the two others in terms of AUC-ROC and AUC-PR. 
 
 <table>
 <tr><th>Logistic regression </th><th>Random Forest </th><th>FastBDT </th></tr>
@@ -77,11 +78,10 @@ These synthetic have 14 features, 10'000 observation points and a class imbalanc
 ![perf](https://user-images.githubusercontent.com/36447056/125334163-57cc6f00-e34b-11eb-8ca3-bd280a52d5a5.png)
 
 
-# Performance difference
+### Figure 2: Performance difference
 ![perfdelta](https://user-images.githubusercontent.com/36447056/125334204-62870400-e34b-11eb-8c42-c21d3432ddc2.png)
-
-# Summary
-As expected the BDT seems to overperform overall. However the biggest gain in performance by the BDT happens in highly imbalanced datasets.  
-As the dataset becomes more and more balanced, the 2 algorithm seems to perform in average the same.
+As expected the BDT seems to overperform overall. However the biggest performance delta is obtained by the BDT in highly imbalanced datasets.  
+As the datasets become more and more balanced, the 2 algorithms seems to converge to the same performance.  
+Note, in order to perform a more rigorous analysis, we should think about which standardisation to use, create more complex training/test datasets and more importantly tune the hyperparameters prior to testing.
 
 
