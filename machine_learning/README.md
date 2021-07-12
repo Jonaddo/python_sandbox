@@ -74,11 +74,11 @@ Here we can have a look at the average performance for the three methods over di
 For each point, we apply a 10-Fold CV.  
 These synthetic have 14 features, 10'000 observation points and a class imbalance ranging from 0.5% to 50%.
 
-![image](https://user-images.githubusercontent.com/36447056/125333317-649c9300-e34a-11eb-8664-6475648f2f81.png)
+![perf](https://user-images.githubusercontent.com/36447056/125334163-57cc6f00-e34b-11eb-8ca3-bd280a52d5a5.png)
 
 
 # Performance difference
-![image](https://user-images.githubusercontent.com/36447056/125333384-79792680-e34a-11eb-9cce-7487c6c3c467.png)
+![perfdelta](https://user-images.githubusercontent.com/36447056/125334204-62870400-e34b-11eb-8c42-c21d3432ddc2.png)
 
 # Summary
 As expected the BDT seems to overperform overall. However the biggest gain in performance by the BDT happens in highly imbalanced datasets.  
