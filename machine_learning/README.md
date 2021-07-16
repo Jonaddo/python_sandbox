@@ -18,5 +18,14 @@ that single nearest neighbor (source: [Wikipedia](https://en.wikipedia.org/wiki/
 
 The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) and the related jupyter notebook is the file called 'heart_attack_knn.ipynb'.
 
+### Workflow
+1. Load the dataset
+2. Clean the dataset if needed
+3. Exploratory Data Analysis (EDA)
+4. Normalize/Standardized continous variable
+5. Model
+6. Hyperparmeter tuning
+7. Predict out-of-sample
+
 
 
