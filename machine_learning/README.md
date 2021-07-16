@@ -2,12 +2,21 @@
 
 # About this repository
 
-Here you will find different ML exercises.
+Here you will find different ML exercises related to classification, clustering and regression.
 
 ## Classification
 
 The first exercise is done on medical data in order to predict if a patient's heart is potentialy at risk or not using a clustering algorithm called K-NN.  
-The dataset can be download on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
+
+In statistics, the k-nearest neighbors algorithm (k-NN) is a non-parametric classification method.  
+It is used for classification and regression.  
+  
+In k-NN classification, the output is a class membership. An object is classified by a plurality vote
+of its neighbors, with the object being assigned to the class most common among its k nearest neighbors
+(k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of
+that single nearest neighbor (source: [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)).  
+
+The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) and the related jupyter notebook is the file called 'heart_attack_knn.ipynb'.
 
 
 
