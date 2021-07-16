@@ -20,12 +20,13 @@ The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahm
 
 ### Workflow
 1. Load the dataset
-2. Clean the dataset if needed
+2. Clean the dataset
 3. Exploratory Data Analysis (EDA)
-4. Normalize/Standardized continous variable
-5. Model
-6. Hyperparmeter tuning
-7. Predict out-of-sample
+4. Feature selection
+5. Normalize/Standardized continous variable
+6. Model
+7. Grid Search cross-validation for hyperparmeter tuning
+8. Predict out-of-sample
 
 
 
