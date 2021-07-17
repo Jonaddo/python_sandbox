@@ -1,4 +1,10 @@
 # [IN CONSTRUCTION]
+Upcoming topics include the following:
+- How to deal with imbalanced datasets?
+- How to deal with missing values?
+- How to deal with outliers?
+- How to detect outliers?
+- How to deal with categorical variables?
 
 # About this repository
 
