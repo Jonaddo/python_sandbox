@@ -1,5 +1,5 @@
 # About
-This repository presents different maths exercises.
+This repository presents different maths exercises using only Numpy and matplotlib for illustration.
 
 # square_circle
 We imagine that we are asked to draw random dots in the corner of a square.  
@@ -14,6 +14,6 @@ Here the challenge require us to plot a triangle that always touch the circle in
 ![square_triangle](https://user-images.githubusercontent.com/36447056/90817451-22332780-e32e-11ea-8c68-929f0bc714b6.png)
 
 # derivative
-In this exercise we compute the 3 first derivative of the gaussian function from scratch using only numpy (and matplotlib for illustration).
+In this exercise we compute the 3 first derivative of the gaussian function from scratch using only numpy.
 ![image](https://user-images.githubusercontent.com/36447056/124804323-751fc880-df5a-11eb-9623-a9f08f68f90f.png)
 
