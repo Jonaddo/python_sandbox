@@ -1,5 +1,5 @@
 # About
-This repository explores different geometry problems.
+This repository presents different maths exercises.
 
 # square_circle
 We imagine that we are asked to draw random dots in the corner of a square.  
