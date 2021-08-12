@@ -43,7 +43,8 @@ In this second exercise, we visit the neural-network of type **Autoencoder** (AE
 Indeed, after training the **AE**, we can use the first part of the neural-network *aka* the encoder to encode/compress the input dataset.  
 This technical have multiple benefits, one of them can increase a classifiers performance.  
 
-In order to showcase the concept, we use a credit card transaction dataset and a gradient boosting decision tree.
+In order to showcase the concept, we use a credit card transaction dataset and a gradient boosting decision tree.  
+The main libraries are `scikit-learn` and `tensorflow`.
 
 
 
