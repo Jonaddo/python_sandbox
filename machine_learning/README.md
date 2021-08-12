@@ -39,7 +39,7 @@ The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahm
 ## Feature space reduction
 File: *feature_space_reduction_AE.ipynb*
 
-In this second exercise, we visit the neural-network of type **Autoencoder** (AE), here, to reduce the feature space dimension.  
+In this second exercise, we visit the neural-network of type **AutoEncoder** (**AE**), here, to reduce the feature space dimension.  
 Indeed, after training the **AE**, we can use the first part of the neural-network *aka* the encoder to encode/compress the input dataset.  
 This technical have multiple benefits, one of them can increase a classifiers performance.  
 
