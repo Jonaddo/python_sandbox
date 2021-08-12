@@ -22,7 +22,7 @@ of its neighbors, with the object being assigned to the class most common among 
 (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of
 that single nearest neighbor (source: [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)).  
 
-The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) and the related jupyter notebook is the file called 'heart_attack_knn.ipynb'.
+The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) and the related jupyter notebook is the file called *heart_attack_knn.ipynb*.
 
 ### Workflow
 1. Load the dataset
