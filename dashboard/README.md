@@ -6,8 +6,9 @@ Our toy dataset have 34 attributes (gender, year, month, age, district,..) descr
 To make it simple, we prepare two dataframes, one aggregation per gender overtime and another one for foreigners ratio per district overtime.
 
 ## The dashboard
-The dashboard has three filters (*district* aka *Kreis*, *year* and *semester*). The filters *year* and *semester* update both graphs thanks to the callback dash decorators.  
-The *Kreis* filter only updates the Bar chart on the left.
+The dashboard has three filters (*district* aka *Kreis*, *year* and *semester*). The filters *year* and *semester* update both graphs thanks to the callback dash decorators. The *Kreis* filter only updates the Bar chart on the left.
+
+**Note**: it seems that the *jupyter-dash* library had some unexpected behaviour on my machine therefore I switched to *dash*
 
 <img width="960" alt="dash_zurich_eda" src="https://user-images.githubusercontent.com/36447056/129057160-4e92a53c-ed31-4b91-a584-ebbbd53e1afc.png">
 
