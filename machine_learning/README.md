@@ -41,9 +41,9 @@ File: *feature_space_reduction_AE.ipynb*
 
 In this second exercise, we visit the neural-network of type **AutoEncoder** (**AE**), here, to reduce the feature space dimension.  
 Indeed, after training the **AE**, we can use the first part of the neural-network *aka* the encoder to compress the input dataset.  
-This technique have multiple benefits, one of them can increase a classifiers performance in a similar fashion.  
+This technique have multiple benefits, one of them can increase a classifiers performance in a similar fashion as the PCA.  
 
-In order to showcase the concept, we use a credit card transaction dataset and a gradient boosting decision tree.  
+In order to showcase the concept, we use a synthetic dataset and a gradient boosting decision tree.  
 The main libraries are `scikit-learn` and `tensorflow`.
 
 
