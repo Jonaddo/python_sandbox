@@ -46,5 +46,4 @@ This technique have multiple benefits, one of them can increase a classifiers pe
 In order to showcase the concept, we use a synthetic dataset and a gradient boosting decision tree.  
 The main libraries are `scikit-learn` and `tensorflow`.
 
-
-
+<img width="214" alt="plot" src="https://user-images.githubusercontent.com/36447056/129340614-fdf59b4b-b776-4a95-a614-136c55135f63.png">
