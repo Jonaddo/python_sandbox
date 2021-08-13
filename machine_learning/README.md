@@ -37,9 +37,15 @@ The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahm
 ## Feature space reduction
 File: *feature_space_reduction_AE.ipynb*
 
-In this second exercise, we visit the neural-network of type **AutoEncoder** (**AE**), here, to reduce the feature space dimension. Then in the second part we reuse the latent space as *new* input for our classifier. Indeed, after training the **AE**, we can use the first part of the neural-network *aka* the encoder to compress the input dataset from 30 features to 8. This technique have multiple benefits, one of them can increase a classifiers performance in a similar fashion as the PCA.  
+Some benefits, among others, of dimension reduction include:
+- Less storage needed
+- Less training time
+- Mitigate multicolinearity
 
-In order to showcase the concept, we use a synthetic dataset and a gradient boosting decision tree.  
+We know that we can use, for example, a PCA to reduce the feature space but we can also use a Neural-Network algorithm, in particular the **AutoEncoder** (**AE**).
+Indeed after training, we can use the *encoder* part of the **AE** to reduce our input dimension. In the first part of the notebook we reduce the input dimension from 30 to 8 features then in the second part we also show how to use the latent space aka compressed information as *new* input for a classifier.
+
+In order to showcase the concept, we use a highly imbalanced synthetic dataset and a gradient boosting decision tree.  
 The main libraries are `scikit-learn` and `tensorflow`.
 
 <img width="214" alt="plot" src="https://user-images.githubusercontent.com/36447056/129340614-fdf59b4b-b776-4a95-a614-136c55135f63.png">
