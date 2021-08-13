@@ -1,14 +1,12 @@
-# [IN CONSTRUCTION]
-Upcoming topics include the following:
+# About this repository
+In this repository we try to show simple example related to machine learning but also data preprocessing.  
+Some exercises may include the following:
 - How to deal with imbalanced datasets?
 - How to deal with missing values?
-- How to deal with outliers?
-- How to detect outliers?
+- How to deal and detect outliers?
+- How to reduce the feature space?
 - How to deal with categorical variables?
 
-# About this repository
-
-Here you will find different ML exercises related to classification, clustering and regression.
 
 ## Classification
 File: *heart_attack_knn.ipynb*
@@ -39,9 +37,7 @@ The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahm
 ## Feature space reduction
 File: *feature_space_reduction_AE.ipynb*
 
-In this second exercise, we visit the neural-network of type **AutoEncoder** (**AE**), here, to reduce the feature space dimension.  
-Indeed, after training the **AE**, we can use the first part of the neural-network *aka* the encoder to compress the input dataset from 30 features to 8.  
-This technique have multiple benefits, one of them can increase a classifiers performance in a similar fashion as the PCA.  
+In this second exercise, we visit the neural-network of type **AutoEncoder** (**AE**), here, to reduce the feature space dimension. Then in the second part we reuse the latent space as *new* input for our classifier. Indeed, after training the **AE**, we can use the first part of the neural-network *aka* the encoder to compress the input dataset from 30 features to 8. This technique have multiple benefits, one of them can increase a classifiers performance in a similar fashion as the PCA.  
 
 In order to showcase the concept, we use a synthetic dataset and a gradient boosting decision tree.  
 The main libraries are `scikit-learn` and `tensorflow`.
