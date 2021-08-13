@@ -9,7 +9,7 @@ Some exercises may include the following:
 
 
 ## Classification
-File: *heart_attack_knn.ipynb*
+File: *KNN_heart_attack.ipynb*
 
 The first exercise is done on medical data in order to predict if a patient's heart is potentialy at risk or not using a supervised learning clustering algorithm called K-NN.  
 
@@ -35,7 +35,7 @@ The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahm
 
 
 ## Feature space reduction
-File: *feature_space_reduction_AE.ipynb*
+File: *AE_feature_space_reduction.ipynb*
 
 Some benefits, among others, of dimension reduction include:
 - Less storage needed
@@ -50,3 +50,15 @@ In order to showcase the concept, we use a highly imbalanced synthetic dataset a
 The main libraries are `scikit-learn` and `tensorflow`.
 
 <img width="214" alt="plot" src="https://user-images.githubusercontent.com/36447056/129340614-fdf59b4b-b776-4a95-a614-136c55135f63.png">
+
+
+## Outlier detection
+File: *AE_outlier_detector.ipynb*
+
+In this notebook we use again the AutoEncoder but this time as an outlier detector. The trick here is to train the neural-network on **1 class only**. Indeed, it enables him to learn the structure of the class (e.g. geniune credit card transaction) such that after training, when we feed him with a sample that is from another class, he will struggle to reproduce it. In other words, the reconstruction error will be significantly higher than when he tries to reproduce a sample that comes from the class that he knows.  
+
+To showcase the concept, we use the credit card dataset from Kaggle (download [here](https://www.kaggle.com/mlg-ulb/creditcardfraud)). Note, the dataset is highly imbalanced (0.172% of signal) and we do not rebalance the dataset. After re-scaling the features and training, we geta AUC-ROC of  91% on the test set. 
+
+<img width="246" alt="Untitled" src="https://user-images.githubusercontent.com/36447056/129371681-baa520d3-4988-4c5f-994d-ff9fde43b6a2.png">
+
+
