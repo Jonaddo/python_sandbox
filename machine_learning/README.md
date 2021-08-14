@@ -44,12 +44,14 @@ Some benefits, among others, of dimension reduction include:
 - Least but not last may also improve the subsequent alogrithms performance
 
 We know that we can use, for example, a PCA to reduce the feature space but we can also use a Neural-Network algorithm, in particular the **AutoEncoder** (**AE**).
-Indeed after training, we can use the *encoder* part of the **AE** to reduce our input dimension. In the first part of the notebook we reduce the input dimension from **30 to 8 features** then in the second part we also show how to use the latent space aka compressed information as *new* input for a classifier.
+Indeed after training, we can use the *encoder* part of the **AE** to reduce our input dimension. In the first part of the notebook we reduce the input dimension from **13 to 2 features** then in the second part we also show how to use the latent space aka compressed information as *new* input for a classifier.
 
-In order to showcase the concept, we use a highly imbalanced synthetic dataset and a gradient boosting decision tree in the second part for classification. We use as template the autoencoder code from [tensorflow.org](https://www.tensorflow.org/tutorials/generative/autoencoder) and adjust it to our use case.  
-The main libraries are `scikit-learn` and `tensorflow`.
+In order to showcase the concept, we use the heart attack dataset (download from Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)) and a random forest in the second part for classification. We use as template the autoencoder code from [tensorflow.org](https://www.tensorflow.org/tutorials/generative/autoencoder) and adjust it to our use case.  
+The main libraries are `scikit-learn` and `tensorflow`.  
 
-<img width="214" alt="plot" src="https://user-images.githubusercontent.com/36447056/129340614-fdf59b4b-b776-4a95-a614-136c55135f63.png">
+**Note**: in practice we would probably prefer to not reduce dimension since its a rather very small dataset!
+
+![roc_curves_comparison](https://user-images.githubusercontent.com/36447056/129444676-96a819ea-2044-4056-9c49-a4a56dbf9d66.png)
 
 
 ## Outlier detection
