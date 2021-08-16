@@ -54,7 +54,8 @@ The main libraries are `scikit-learn` and `tensorflow`.
 
 **Note**: in practice we would probably prefer to not reduce dimension since its a rather very small dataset!
 
-![roc_curves_comparison](https://user-images.githubusercontent.com/36447056/129444676-96a819ea-2044-4056-9c49-a4a56dbf9d66.png)
+![roc_curves_comparison](https://user-images.githubusercontent.com/36447056/129602458-cff6c959-6cda-46cd-a0ee-eb5d4a6dbda1.png)
+
 
 
 ## Outlier detection
