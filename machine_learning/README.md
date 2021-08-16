@@ -21,7 +21,10 @@ of its neighbors, with the object being assigned to the class most common among 
 (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of
 that single nearest neighbor (source: [Wikipedia](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)).  
 
-The dataset can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) and the related jupyter notebook is the file called *heart_attack_knn.ipynb*.
+The dataset for this little tutorial can be downloaded on Kaggle [here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset).  Since we are dealing with health data, in particular whether or not a patient can have a heart attack, we will prefer to chose a model that has a bigger number of false positive (FP) cases than false negative (FN). Indeed the consequences associated by predicting a patient to likely not have a heart attack (but that will in fact have one) is much greater than the opposite. Here below the confusion matrix shows that we have more FP (4) than FN (3).  
+  
+![KNN_conf_matrix](https://user-images.githubusercontent.com/36447056/129595585-09e55e69-a4e2-43f7-909b-3a02787b2767.png)
+
 
 ### Workflow
 1. Load the dataset
