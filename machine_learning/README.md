@@ -11,7 +11,7 @@ Some exercises may include the following:
 ## Classification
 File: *KNN_heart_attack.ipynb*
 
-The first exercise is done on medical data in order to predict if a patient's heart is potentialy at risk or not using a supervised learning clustering algorithm called K-NN.  
+The first exercise is done on medical data in order to predict if a patient's heart is potentialy at risk or not using a supervised learning classification algorithm called K-NN.  
 
 In statistics, the k-nearest neighbors algorithm (k-NN) is a non-parametric classification method.  
 It is used for classification and regression.  
