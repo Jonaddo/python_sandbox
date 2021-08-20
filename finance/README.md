@@ -1,8 +1,10 @@
 # About
 This repository contains different exercises of quantitative finance analysis.
 
-# portfolio_measures
-Exercise to calculate common technical fund informatino such as TE, beta, correlation and volatility.\
+## Technical Fund Information
+File: *portfolio_measures.ipynb*
+
+Exercise to calculate common technical fund information such as TE, beta, correlation and volatility.\
 Note: In the next update we will see how we can add the weight re-balancing in the logic.
 
 Important reminder:
@@ -17,17 +19,20 @@ The constitutens of the portfolio are the SPY, TLT and GLD.
 ![cumulative](https://user-images.githubusercontent.com/36447056/107700637-1199b380-6cb8-11eb-8a79-2804f520cfe0.png)
 
 
-# call_option_pricing_example
-Simple code to compute a call option price using the Monte-Carlo simulation in the BS framework.
+## Option Pricing
+File: *call_option_pricing.ipynb*
+
+Simple code to compute a call option price using the Monte-Carlo simulation in the Black-Scholes framework.
 
 
-# monte_carlo_simulations
-The notebook shows two examples of a Monte Carlo simulation using the Euler discretization scheme.\
-The first one is a simple geometric browninan motion and the second example uses the Heston model.\
-The main difference with the first example is that this time we allow the volatility to be stochastic\
-and thus is more realistic for simulating e.g. stock prices.  
+## Monte-Carlo Simulation
+File: *MC_simulation_stock_price.ipynb*  
 
-![pgf_texsystem (2)](https://user-images.githubusercontent.com/36447056/107700396-b9fb4800-6cb7-11eb-8219-85ba4112b761.png)
+The notebook shows an example of time series forecasting using Monte-Carlo simulation. In particular, we use the euler discretization of the geometric brownian motion (GBM).
+We estimate the parameters (mean and sigma) on 1 year i.e. 12 data points. One could also use the Heston model. The main difference with the first example is that this time the volatility is also stochastic and thus is more realistic for simulating e.g. stock prices. However more tricky to setup since now we need the volatility of the volatility!  
+
+![aapl_mc_sim_5months](https://user-images.githubusercontent.com/36447056/130253121-f0b3ac0e-b847-4f21-9e70-a7ea08779144.png)
+
 
 
 
