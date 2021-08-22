@@ -44,7 +44,7 @@ Some benefits, among others, of dimension reduction include:
 - Less storage needed
 - Less training time
 - Mitigate multicolinearity
-- Least but not last may also improve the subsequent alogrithms performance
+- May also improve the subsequent alogrithms performance
 
 We know that we can use, for example, a PCA to reduce the feature space but we can also use a Neural-Network algorithm, in particular the **AutoEncoder** (**AE**).
 Indeed after training, we can use the *encoder* part of the **AE** to reduce our input dimension. In the first part of the notebook we reduce the input dimension from **13 to 2 features** then in the second part we also show how to use the latent space aka compressed information as *new* input for a classifier.
