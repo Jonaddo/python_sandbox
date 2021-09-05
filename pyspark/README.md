@@ -8,5 +8,6 @@ This notebook include the following examples:
 - How to clean multiple string columns in one go?
 - How to use SQL like statements?
 - How to parse strings using *F.split()* together with *.getItem()* or by using *F.regex_extract()*
+- How to use window function to compute statistical metrics over multiple groups?
 
 For more details please refer to [PySpark official documentation](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql.html)
