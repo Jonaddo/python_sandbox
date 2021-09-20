@@ -20,7 +20,7 @@ Simple code to compute a call option price using the Monte-Carlo simulation in t
 
 
 ## Forecastinf using Monte-Carlo simulation
-File: *MC_simulation_stock_price.ipynb*  
+File: *forecasting_mc_sim.ipynb*  
 
 The notebook shows an example of time series forecasting using Monte-Carlo simulation. In particular, we use the euler discretization of the geometric brownian motion (GBM).
 We estimate the parameters (mean and sigma) on 1 year i.e. 12 data points. One could also use the Heston model. The main difference with the first example is that this time the volatility is also stochastic and thus is more realistic for simulating e.g. stock prices. However more tricky to setup since now we need the volatility of the volatility!  
