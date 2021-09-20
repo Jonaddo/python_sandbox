@@ -1,22 +1,16 @@
 # About
-This repository contains different exercises of quantitative finance analysis.
+This repository contains different exercises regarding quantitative finance analysis.
 
 ## Technical Fund Information
-File: *portfolio_measures.ipynb*
+File: *fund_technical_info.ipynb*
 
-Exercise to calculate common technical fund information such as TE, beta, correlation and volatility.\
-Note: In the next update we will see how we can add the weight re-balancing in the logic.
+Exercise to calculate common technical fund information such as TE, beta, correlation and volatility.
 
 Important reminder:
-  1) Simple returns are additive in a portfolio but not log returns
-  2) Simple returns are not additive over time
-  3) Stock returns do NOT follow a normal distribution since in comparison they have fatter tails and are negatively skewed.
- 
-In the picture below, rp is the portfolio return in 2020 and ret_SP500 (S&P 500) is our benchmark.\
-The excess return for year 2020 in this example is +7.19%.\
-The constitutens of the portfolio are the SPY, TLT and GLD.  
-
-![cumulative](https://user-images.githubusercontent.com/36447056/107700637-1199b380-6cb8-11eb-8a79-2804f520cfe0.png)
+1. Simple returns are additive in a portfolio but not log returns
+2. Simple returns are not additive over time
+3. Arithmetic mean provides an unbiased estimate of the return for the following period.
+4. Geometric mean is a good measure of the historical performance.
 
 
 ## Option Pricing
@@ -25,7 +19,7 @@ File: *call_option_pricing.ipynb*
 Simple code to compute a call option price using the Monte-Carlo simulation in the Black-Scholes framework.
 
 
-## Monte-Carlo Simulation
+## Forecastinf using Monte-Carlo simulation
 File: *MC_simulation_stock_price.ipynb*  
 
 The notebook shows an example of time series forecasting using Monte-Carlo simulation. In particular, we use the euler discretization of the geometric brownian motion (GBM).
