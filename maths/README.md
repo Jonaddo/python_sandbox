@@ -1,6 +1,7 @@
 # About
 This repository presents different maths exercises using only Numpy (and matplotlib for illustration).
 
+---
 ## Exercise 1
 File: *square_circle.ipynb*
 
@@ -9,6 +10,7 @@ Finally, we have to color the dots in 2 different colors depending if they are i
 
 ![square_circle](https://user-images.githubusercontent.com/36447056/90817195-bcdf3680-e32d-11ea-8388-9a0a35cdf325.png)
 
+---
 ## Exercise 2
 File: *circle_triangle.ipynb*
 
@@ -16,6 +18,7 @@ Here the challenge require us to plot a triangle that always touch the circle in
 
 ![square_triangle](https://user-images.githubusercontent.com/36447056/90817451-22332780-e32e-11ea-8c68-929f0bc714b6.png)
 
+---
 ## Exercise 3
 File: *derivative.ipynb*
 
