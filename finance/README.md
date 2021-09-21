@@ -14,7 +14,7 @@ File: *call_option_pricing.ipynb*
 Simple code to compute a call option price using the Monte-Carlo simulation in the Black-Scholes framework.
 
 ---
-### Forecastinf using Monte-Carlo simulation
+### Forecasting using Monte-Carlo simulation
 File: *forecasting_mc_sim.ipynb*  
 
 This notebook shows an example of time series forecasting using Monte-Carlo simulation. In particular, we use the euler discretization of the geometric brownian motion (GBM).
