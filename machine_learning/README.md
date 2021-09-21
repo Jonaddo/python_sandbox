@@ -7,7 +7,7 @@ Some exercises may include the following:
 - How to reduce the feature space?
 - How to deal with categorical variables?
 
-
+---
 ## Classification
 File: *KNN_heart_attack.ipynb*
 
@@ -36,7 +36,7 @@ The dataset for this little tutorial can be downloaded on Kaggle [here](https://
 7. Grid Search cross-validation for hyperparmeter tuning
 8. Predict out-of-sample
 
-
+---
 ## Feature space reduction
 File: *AE_feature_space_reduction.ipynb*
 
@@ -57,7 +57,7 @@ The main libraries are `scikit-learn` and `tensorflow`.
 ![roc_curves_comparison](https://user-images.githubusercontent.com/36447056/129602458-cff6c959-6cda-46cd-a0ee-eb5d4a6dbda1.png)
 
 
-
+---
 ## Outlier detection
 File: *AE_outlier_detector.ipynb*
 
